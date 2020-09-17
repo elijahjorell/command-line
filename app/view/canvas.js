@@ -1,6 +1,12 @@
+const state = {
+    terminal: new Terminal()
+};
+
 function setup() {
     const canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('app');
+    
+    state.terminal.initialise();
 }
 
 function draw() {
